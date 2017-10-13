@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+.header{width:1000px;height:78px;margin:0 460px;}
+.header div{float:right;width:210px;margin-right:13px;margin-top:26px;}
+.header span{font:12px/20px "微软雅黑";;color:#b67c01;}
+.header input{background:url(images/Hotel02.jpg) no-repeat 119px center ;border:1px solid #b67c01;width:143px;height:27px;}
+.header img{float:left;}
+
+.center{width:1920px;height:722px;background:url(images/index_banner.jpg) no-repeat;}
+.nav{width:100%;background:#2a384f;opacity:0.3;}
+.nav ul{width:1000px;height:50px;margin:0 auto;font:20px/50px "微软雅黑";}
+.nav li{float:left;}
+.nav li a{display:block;color:#ffffff;}
+.l1 a{padding:0 42px 0 41px;}
+.l2 a{padding:0 23px;}
+.l3 a{padding:0 21px;}
+.l4 a{padding:0 24px;}
+.l5 a{padding:0 21px;}
+.l6 a{padding:0 23px;}
+.l7 a{padding:0 22px;}
+.l8 a{padding:0 23px 0 26px;}
+.nav li a:hover{background:#364e80;color:#ffffff;}
+
+.banner{position:relative;height:671px;}
+.banner div{position:absolute;left:460px;bottom:0;width:311px;height:168px;background:#596273;opcity:0.79;}
+.banner img{display:inline-block;border:2px solid #d0ab5c;margin:43px 27px 35px 24px;}
+
+
+
+
+
+
+
+
+
+
+
+.footer{width:1920px;background:#2d384e;}
+.footer div{margin:0 460px;width:1000px;height:107px;}
+.footer p{float:left;display:inline-block;padding-top:22px;padding-bottom:27px;width:550px;font:12px/29px "微软雅黑";color:#f5f5f6;}
+.footer span{float:right;display:inline-block;margin-top:29px;margin-bottom:31px;}
+
+.footer img1{margin-right:29px;} 
