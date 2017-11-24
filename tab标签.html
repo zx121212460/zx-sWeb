@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="angular.min.js"></script>
+<style type="text/css">
+		.align-top {vertical-align: top}
+		.city-container .content {
+			border: 1px solid #d7dadb;
+			background-color: #ffffff;
+		}
+		.city-container .content .big-title {
+			font-size: 20px;
+			margin: 10px 0px 10px 0;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #d7dadb;
+		}
+		.city-container .content .name-header {
+			margin: 15px;
+		}
+		.city-container .content .name-header .name {
+			width: 20%;
+			padding: 18px;
+			border: 1px solid #d7dadb;
+			margin-right: -1px;
+			margin-bottom: -1px;
+			cursor: pointer;
+		}
+		.city-container .content .name-header .name:hover {
+			background: #f3f4f8;
+		}
+		.city-container .content .name-header .name.active {
+			color: #38a884;
+			background: #f3f4f8;
+		}
+		.city-container .content .name-card {
+			margin: 0 0 20px;
+			height: 350px;
+		}
+		.city-container .content .name-card .desc {
+			font-size: 20px;
+		}
+		.class_dp{display:block;}
+	</style>
+</head>
+
+<body ng-app="myApp">
+<div class="container city-container" ng-controller="myContr">
+    <h1 class="course-title">Tabs标签</h1>
+    <div class="row">
+        <div class="content">
+            <div class="col-xs-12 big-title">城市列表 <span class="badge align-top" >1</span></div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">河北</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">山东</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">河南</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">辽宁</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">吉林</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">湖南</div>
+            </div>
+            <div class="row name-header">
+                <div class="col-xs-2 name text-center" ng-click="clickDiv($index)">湖北</div>
+            </div>
+            <div class="row name-card" ng-class="{class_dp:par==$index}">
+                <div class="col-xs-12">
+                    <h1>河北简介：</h1>
+                    <div class="desc">河北。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>山东简介：</h1>
+                    <div class="desc">山东。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>河南简介：</h1>
+                    <div class="desc">河南。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>辽宁简介：</h1>
+                    <div class="desc">辽宁。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>吉林简介：</h1>
+                    <div class="desc">吉林。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>湖南简介：</h1>
+                    <div class="desc">湖南。。。</div>
+                    
+                </div>
+                <div class="col-xs-12" ng-hide="true">
+                    <h1>湖北简介：</h1>
+                    <div class="desc">湖北。。。</div>
+                    
+                </div>                                                                
+            </div>          
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    var app = angular.module("myApp",[]);
+    app.controller("myContr",function($scope){
+    	$scope.data = [
+    		{name:"河北",des:"河北。。。"}，
+    		{name:"山东",des:"山东。。。"}，
+    		{name:"河南",des:"河南。。。"}，
+    		{name:"辽宁",des:"辽宁。。。"}，
+    		{name:"吉林",des:"吉林。。。"}，
+    		{name:"湖南",des:"湖南。。。"}，
+    		{name:"湖北",des:"湖北。。。"}
+    	];
+    	// $scope.show = 1;
+    	$scope.clickDiv = function(e){
+    		$scope.par = e;
+    	};
+    });
+</script>
