@@ -1,0 +1,48 @@
+.header{
+	background: url(../images/homehead.png) no-repeat center top;
+	height:100px;
+	position:relative;
+}
+.header h1 a{
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left: -140px;
+	width:228px;
+	height:280px;
+	text-indent: -999em;
+	overflow: hidden;
+	background:url(../images/logo.png) no-repeat center top;
+}
+.header ul{
+	width:1000px;
+	margin:0 auto;
+	overflow: hidden;
+
+}
+.header ul li{
+	float:left;
+
+	margin-top:13px;
+
+}
+.header ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+	color:#fff;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+		width:113px;
+}
+.header ul li.gap{
+	padding-right:228px;
+}
+.header ul li.current{
+	background:url(../images/sprite.png) no-repeat 0 4px;
+}
+.header ul li a:hover{
+	background:url(../images/sprite.png) no-repeat 0 4px;
+}
